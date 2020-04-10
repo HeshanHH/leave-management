@@ -10,6 +10,7 @@ namespace leave_management.Contracts
         //we  create interfaces for making functions available to everybody.
         ICollection<T> FindAll(); //ICollection is a class.
         T FindById(int Id); // T means some class and find it by id.
+        bool isExists(int id);
         bool Create(T entity);//wanna create some T typed entity
         bool Update(T entity);
         bool Delete(T entity);
